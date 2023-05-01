@@ -61,14 +61,12 @@
               <heading>News</heading>
               <p style="margin-left: 40px">
               <ul>
-                <li><b>Nov 2021</b> - Started as d'ingénieur de recherche at <a href='http://camma.u-strasbg.fr/'>Camma Research Lab</a>
-                <li><b>Oct 2020</b> - <a href='https://arxiv.org/abs/2010.14982'>Pre-print</a></span> Toyota Smarthomes Untrimmed Dataset For Action Detection. (Work done at INRIA)</li>
-                <li><b>Jul 2020</b> - <span class="blinking", color="red"><a href='https://128.84.21.199/abs/2007.03056'>One Paper</a></span> accepted at ECCV2020 for the work done at INRIA</li> 
-                <li><b>Mar 2020</b> - Joined as Decision Scientist at Inference Labs, Bengaluru, India </li>
-                <li><b>Jul 2019</b> - Joined STARS Lab at INRIA-Sophia Antipolis, France as a research intern.</li>
-                <li><b>Apr 2019</b> - Left Kantar, Bengaluru, India as Senior Data Analyst.</li>
-                <li><b>Jun 2017</b> - Joined Kantar, Bengaluru, India as Data Analyst.</li>
-                <li><b>May 2017</b> - Completed Masters in Computer Science from NIT, Rourkela, India.</li> 
+                <li><a href='https://link.springer.com/article/10.1007/s11548-023-02914-1'>IPCAI/IJCARS'2023 paper</a> on temporal approach for surgical triplet recognition.
+                <li>Started PhD in the <a href='http://camma.u-strasbg.fr/'>Camma Group</a> on surgical video understanding in 2022. 
+                <li><a href='https://arxiv.org/abs/2010.14982'>TPAMI'2022 paper</a></span> on Toyota Smarthomes Untrimmed Dataset For Action Detection. (Work done as a part of research internship in INRIA)</li>
+                <li><<span class="blinking", color="red"><a href='https://128.84.21.199/abs/2007.03056'>ECCV'2020</a></span>on Learning Video-Pose Embedding for
+Activities of Daily Living (Work done as a part of research internship in INRIA)</li> 
+                <li>Completed Masters in Computer Science from NIT, Rourkela, India in 2017.</li> 
               </ul>
               </p>
             </td>
@@ -84,8 +82,45 @@
         </tbody></table>
      
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
+        
+                 <!-----------------------------------------------------------------------------------------------------------------------------------------> 
           
+         <tr onmouseout="rit_stop()" onmouseover="rit_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='rit_image'><img src='images/rit_arch6.jpg' height=145px width=185px></div>
+                <img src='images/rit_arch6.jpg' height=145px width=185px>
+              </div>
+              <script type="text/javascript">
+                function vpn_start() {
+                  document.getElementById('rit_image').style.opacity = "1";
+                }
+                function vpn_stop() {
+                  document.getElementById('rit_image').style.opacity = "0";
+                }
+                vpn_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://link.springer.com/article/10.1007/s11548-023-02914-1">
+                <papertitle>Rendezvous in time: an attention-based temporal fusion approach for surgical triplet recognition</papertitle>
+              </a>
+              <br>
+              <strong>Saurav Sharma</strong>, Chinedu Innocent Nwoye, Didier Mutter & Nicolas Padoy.
+              <br>
+              <em>International Journal of Computer Assisted Radiology and Surgery</em>, 2023
+              <br>
+              <br>
+              <a href="https://github.com/CAMMA-public/rendezvous-in-time">Project Link</a>
+              <br>
+              <p></p>
+              <p>Surgical triplet recognition using video based evolution of surgical actions captured using temporal attention method.</p>
+            </td>
+          </tr>
+          
+          <!----------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!--------------------------------------------------------------------------------------------------------------------------->
          <tr onmouseout="tsu_stop()" onmouseover="tsu_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -115,7 +150,7 @@
               <a href="https://project.inria.fr/toyotasmarthome/">Project Link</a>
               <br>
               <p></p>
-              <p>Untrimmed daily-living action detection dataset with dense annotations and features several real world challenges</p>
+              <p>Untrimmed daily-living action detection dataset with dense annotations and features several real world challenges. The dataset has a resolution of 640×480 and offers 3 modalities: RGB + Depth + 3D Skeleton</p>
             </td>
           </tr>
           
