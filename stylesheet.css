@@ -1,151 +1,212 @@
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600&display=swap');
+
+body, td, th {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  background: #f8f9fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   color: #1772d0;
   text-decoration: none;
+  transition: color 0.2s;
 }
-
-a:focus,
-a:hover {
+a:focus, a:hover {
   color: #f09228;
   text-decoration: none;
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  margin: 32px 0 24px 0;
 }
 
 strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+strongred {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  color: red;
+  font-size: 16px;
 }
 
 heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: #222;
 }
 
-papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700
+sectionheading {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: #1772d0;
 }
 
-name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+.pageheading {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
   font-size: 32px;
-}
-
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 16px;
+  color: #222;
 }
 
 span.highlight {
   background-color: #ffffd0;
 }
 
-.glow {
-  font-size: 4px;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
 }
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+ul {
+  padding-left: 24px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+/* Card-like containers for sections */
+table, .card-section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 0;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  body, td, th {
+    font-size: 15px;
   }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  table {
+    width: 98% !important;
+    max-width: 98% !important;
   }
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .pageheading {
+    font-size: 28px;
+  }
+  heading, sectionheading {
+    font-size: 18px;
+  }
+  table, .card-section {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+/* Dotted HR for section breaks */
+hr.dotted {
+  border-top: 2px dotted #bbb;
+  background: none;
+  height: 0;
+  margin: 32px 0 24px 0;
+}
+
+/* Custom class for blinking text */
+.blinking {
+  animation: blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+  0%{     color: #f00;    }
+  49%{    color: #f00; }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: #f00;    }
+}
+
+/* Remove table cell borders */
+td {
+  border: none !important;
+}
+
+.representative-paper {
+  border-radius: 18px !important;
+  box-shadow: 0 2px 12px rgba(224, 220, 120, 0.10);
+  overflow: hidden;
+  border: 2px solid #e6f4ff;
+  background-color: #e6f4ff !important;
+}
+
+.education-table {
+  width: 100%;
+  margin-top: 8px;
+  border-collapse: separate;
+  border-spacing: 0 72px; /* much larger vertical gap between rows */
+}
+.edu-entry {
+  border: none;
+  /* Remove bottom padding, use border-spacing instead */
+}
+.edu-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #eee;
+  object-fit: cover;
+  margin-top: 2px;
+}
+.edu-school {
+  font-size: 20px;
+  font-weight: 700;
+  color: #444;
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+.edu-degree {
+  font-weight: 700;
+  color: #444;
+  font-size: 18px;
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+}
+.edu-years {
+  color: #888;
+  font-size: 15px;
+  font-style: italic;
+  margin-left: 2px;
+}
+.edu-desc {
+  color: #666;
+  font-size: 15px;
+  font-style: italic;
+  display: block;
+  margin-top: 2px;
+}
+@media (max-width: 600px) {
+  .edu-school { font-size: 18px; }
+  .edu-logo { width: 60px; height: 60px; }
 }
 
