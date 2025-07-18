@@ -59,7 +59,7 @@ sectionheading {
 
 .pageheading {
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
   display: block;
   margin-bottom: 16px;
@@ -87,7 +87,7 @@ ul {
 }
 
 li {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   line-height: 1.6;
 }
 
@@ -164,15 +164,15 @@ td {
   width: 100%;
   margin-top: 8px;
   border-collapse: separate;
-  border-spacing: 0 72px; /* much larger vertical gap between rows */
+  border-spacing: 0 20px; /* reduced vertical gap between rows */
 }
 .edu-entry {
   border: none;
   /* Remove bottom padding, use border-spacing instead */
 }
 .edu-logo {
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: #eee;
   object-fit: cover;
