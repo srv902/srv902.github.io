@@ -90,6 +90,36 @@ li {
   line-height: 1.6;
 }
 
+.live-badge {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #ff4d4f;
+  color: #fff;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 rgba(255, 77, 79, 0.55);
+  animation: livePulse 1.6s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 77, 79, 0.5);
+  }
+  50% {
+    transform: translateY(-1px) scale(1.04);
+    box-shadow: 0 0 14px 4px rgba(255, 77, 79, 0.32);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 77, 79, 0);
+  }
+}
+
 /* Card-like containers for sections */
 table, .card-section {
   background: #fff;
@@ -208,4 +238,3 @@ td {
   .edu-school { font-size: 18px; }
   .edu-logo { width: 60px; height: 60px; }
 }
-
